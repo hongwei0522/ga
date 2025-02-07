@@ -24,8 +24,8 @@ useHead({
 <style>
 .app-wrapper {
   /* width: 100vw;*/
-  height: 100vh;
+  /* height: 100vh; */
   min-width: 360px;
-  background: #fff2e1;
+  /* background: #fff2e1; */
 }
 </style>

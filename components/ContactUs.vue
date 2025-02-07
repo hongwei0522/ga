@@ -13,7 +13,6 @@
 
 <style scoped>
 .contact {
-  background: #fff2e1;
   width: 1024px;
   margin: 0 auto;
   padding: 10px 20px;
