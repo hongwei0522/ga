@@ -1,37 +1,32 @@
 <template>
   <div class="products">
-    <div class="product-title">裝潢作品</div>
-    <Swiper
-      :modules="[Autoplay]"
-      :navigation="false"
-      :loop="true"
-      :autoplay="{
-        delay: 3000,
-        disableOnInteraction: false,
-      }"
-    >
-      <SwiperSlide class="swiper-slide">
-        <img src="/imgs/product1.jpg" alt="" width="350px" height="200px" />
-        <p>跳色系設計風格</p>
-      </SwiperSlide>
-      <SwiperSlide class="swiper-slide">
-        <img src="/imgs/product2.jpg" alt="" width="350px" height="200px" />
-        <p>藝術塗料 「雪菲爾」</p>
-      </SwiperSlide>
-      <SwiperSlide class="swiper-slide">
-        <img src="/imgs/product3.jpg" alt="" width="350px" height="200px" />
-        <p>石塑地板安裝</p>
-      </SwiperSlide>
-    </Swiper>
+    <div class="product-title">完工圖</div>
+
+    <div class="product-container">
+      <router-link
+        v-for="(product, index) in products"
+        :key="index"
+        :to="`/products/${product.path}`"
+        class="product-item"
+      >
+        <img :src="product.img" :alt="product.name" class="product-img" />
+        <p class="product-name">{{ product.name }}</p>
+      </router-link>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import 'swiper/css';
-// import 'swiper/css/navigation';
-
-import { Autoplay } from 'swiper/modules';
+const products = ref([
+  { path: 'microcement', img: '/imgs/microcement/LINE_ALBUM__250318_1.jpg', name: '微水泥' },
+  { path: 'sheffield', img: '/imgs/sheffield/LINE_ALBUM__250318_4.jpg', name: '英國曼涂雪菲爾' },
+  { path: 'limebased', img: '/imgs/limebased/LINE_ALBUM__250318_8.jpg', name: '英國曼涂石灰基' },
+  {
+    path: 'lmitatonFairFacedConcrete',
+    img: '/imgs/ImitationFairFacedConcrete/LINE_ALBUM__250318_1.jpg',
+    name: '仿清水模',
+  },
+]);
 </script>
 
 <style scoped>
@@ -40,14 +35,53 @@ import { Autoplay } from 'swiper/modules';
   margin: 0 auto;
   margin-bottom: 50px;
   padding: 10px 20px;
+  padding-top: 90px;
 }
 .product-title {
   font-size: 32px;
   text-align: center;
   margin-bottom: 20px;
 }
-.swiper-slide {
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 兩欄 */
+  gap: 20px; /* 間距 */
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  margin: 0 auto;
+}
+
+.product-img {
+  width: 350px;
+  height: 200px;
+  object-fit: cover; /* 確保圖片不變形 */
+}
+
+.product-name {
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .product-container {
+    grid-template-columns: repeat(1, 1fr); /* 手機顯示 1 欄 */
+    gap: 10px;
+  }
+
+  .product-img {
+    width: 300px;
+    height: 150px;
+    object-fit: cover; /* 確保圖片不變形 */
+  }
+  .product-name {
+    font-size: 16px;
+  }
 }
 </style>

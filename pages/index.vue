@@ -1,8 +1,8 @@
 <template>
-  <Header />
-  <AboutUs />
+  <!-- <Header /> -->
+  <!-- <AboutUs /> -->
   <Service />
   <Products />
   <!-- <ContactUs /> -->
-  <Footer />
+  <!-- <Footer /> -->
 </template>

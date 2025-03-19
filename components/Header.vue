@@ -7,9 +7,11 @@
         <img src="/icons/logo.jpg" alt="logo" height="60px" />
       </nuxt-link>
       <ul class="header-item">
-        <li class="header-item-text">關於我們</li>
-        <li class="header-item-text">服務項目</li>
-        <li class="header-item-text">裝潢作品</li>
+        <nuxt-link to="/AboutUs" class="no-decoration">
+          <li class="header-item-text">關於我們</li>
+        </nuxt-link>
+        <!-- <li class="header-item-text">服務項目</li> -->
+        <!-- <li class="header-item-text">裝潢作品</li> -->
         <!-- <li class="header-item-text">聯絡我們</li> -->
       </ul>
     </div>
@@ -38,9 +40,13 @@
   display: flex;
   align-items: center;
 }
+.no-decoration {
+  text-decoration: none;
+}
 .header-item-text {
   margin-left: 20px;
   font-size: 16px;
   cursor: pointer;
+  color: black;
 }
 </style>
