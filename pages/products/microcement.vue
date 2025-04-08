@@ -44,6 +44,9 @@
     8.應用範圍廣:桌子、凳子等工藝品皆可塗刷 -->
 
     <div class="product-container">
+      <div class="product-item">
+        <img src="/public/imgs/microcement/LINE_ALBUM__250408_1.jpg" alt="product.img" class="product-img" />
+      </div>
       <div v-for="(product, index) in products" :key="index" class="product-item">
         <img :src="product.img" :alt="product.img" class="product-img" />
         <!-- <p class="product-name">{{ product.name }}</p> -->
@@ -59,7 +62,7 @@
 // import { Autoplay } from 'swiper/modules';
 const products = ref(
   Array.from({ length: 13 }, (_, i) => ({
-    img: `/imgs/microcement/LINE_ALBUM__250318_${i + 1}.jpg`,
+    img: `/ga/imgs/microcement/LINE_ALBUM__250318_${i + 1}.jpg`,
   }))
 );
 </script>
@@ -68,7 +71,7 @@ const products = ref(
 .products {
   max-width: 1024px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
   padding: 10px 20px;
   padding-top: 90px;
 }

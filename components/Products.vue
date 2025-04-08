@@ -18,12 +18,12 @@
 
 <script setup lang="ts">
 const products = ref([
-  { path: 'microcement', img: '/imgs/microcement/LINE_ALBUM__250318_1.jpg', name: '微水泥' },
-  { path: 'sheffield', img: '/imgs/sheffield/LINE_ALBUM__250318_4.jpg', name: '英國曼涂雪菲爾' },
-  { path: 'limebased', img: '/imgs/limebased/LINE_ALBUM__250318_8.jpg', name: '英國曼涂石灰基' },
+  { path: 'microcement', img: '/ga/imgs/microcement/LINE_ALBUM__250408_1.jpg', name: '微水泥' },
+  { path: 'sheffield', img: '/ga/imgs/sheffield/LINE_ALBUM__250318_4.jpg', name: '英國曼涂雪菲爾' },
+  { path: 'limebased', img: '/ga/imgs/limebased/LINE_ALBUM__250318_8.jpg', name: '英國曼涂石灰基' },
   {
     path: 'lmitatonFairFacedConcrete',
-    img: '/imgs/ImitationFairFacedConcrete/LINE_ALBUM__250318_1.jpg',
+    img: '/ga/imgs/ImitationFairFacedConcrete/LINE_ALBUM__250318_1.jpg',
     name: '仿清水模',
   },
 ]);
@@ -33,7 +33,7 @@ const products = ref([
 .products {
   max-width: 1024px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
   padding: 10px 20px;
   padding-top: 90px;
 }
@@ -67,6 +67,7 @@ const products = ref([
   font-size: 18px;
   font-weight: bold;
   color: #333;
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {

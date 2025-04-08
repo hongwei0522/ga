@@ -19,7 +19,7 @@
 <script setup lang="ts">
 const products = ref(
   Array.from({ length: 4 }, (_, i) => ({
-    img: `/imgs/ImitationFairFacedConcrete/LINE_ALBUM__250318_${i + 1}.jpg`,
+    img: `/ga/imgs/ImitationFairFacedConcrete/LINE_ALBUM__250318_${i + 1}.jpg`,
   }))
 );
 </script>
@@ -28,7 +28,7 @@ const products = ref(
 .products {
   max-width: 1024px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
   padding: 10px 20px;
   padding-top: 90px;
 }

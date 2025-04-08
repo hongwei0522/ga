@@ -26,7 +26,10 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: white;
+  background-image: url('/imgs/microcement--bg.jpg'); /* 使用微水泥紋理圖片 */
+  background-size: cover; /* 確保背景圖片覆蓋整個容器 */
+  background-repeat: no-repeat; /* 不重複背景圖片 */
+  background-attachment: fixed; /* 固定背景 */
 }
 .footer-content {
   display: flex;

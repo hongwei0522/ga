@@ -4,7 +4,7 @@
   <div class="header">
     <div class="header-content">
       <nuxt-link to="/" class="header-logo">
-        <img src="/icons/logo.jpg" alt="logo" height="60px" />
+        <img src="/icons/GD-Photoroom.png" alt="logo" height="60px" />
       </nuxt-link>
       <ul class="header-item">
         <nuxt-link to="/AboutUs" class="no-decoration">
@@ -20,7 +20,11 @@
 
 <style scoped>
 .header {
-  background: white;
+  background-image: url('/imgs/microcement--bg.jpg'); /* 使用微水泥紋理圖片 */
+  background-size: cover; /* 確保背景圖片覆蓋整個容器 */
+  /* background-position: center;  */
+  background-repeat: no-repeat; /* 不重複背景圖片 */
+  background-attachment: fixed; /* 固定背景 */
   position: fixed;
   display: flex;
   justify-content: center;
