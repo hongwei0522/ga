@@ -9,7 +9,12 @@
         :to="`/products/${product.path}`"
         class="product-item"
       >
-        <img :src="product.img" :alt="product.name" class="product-img" />
+        <template v-if="product.type === 'video'">
+          <video :src="product.img" class="product-img" autoplay loop muted playsinline></video>
+        </template>
+        <template v-else>
+          <img :src="product.img" :alt="product.name" class="product-img" />
+        </template>
         <p class="product-name">{{ product.name }}</p>
       </router-link>
     </div>
@@ -25,6 +30,12 @@ const products = ref([
     path: 'lmitatonFairFacedConcrete',
     img: '/ga/imgs/ImitationFairFacedConcrete/LINE_ALBUM__250318_1.jpg',
     name: '仿清水模',
+  },
+  {
+    path: 'simante',
+    img: '/ga/imgs/simante/767255543.860772.mp4',
+    name: '司曼特特殊漆',
+    type: 'video',
   },
 ]);
 </script>

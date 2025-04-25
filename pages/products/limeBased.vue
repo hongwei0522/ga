@@ -23,6 +23,34 @@ const products = ref(
     img: `/ga/imgs/limebased/LINE_ALBUM__250318_${i + 1}.jpg`,
   }))
 );
+
+useHead({
+  title: '英國GB曼涂石灰基 - 環保石灰塗料 | GA塗料',
+  meta: [
+    {
+      name: 'description',
+      content:
+        '英國GB曼涂石灰基是英國本土DIY市場最暢銷單品，歐標環保，24個月沈澱精華石灰膏，不含防腐劑，零化合物排放。採用英國鵝卵石製作，製作過程環保可再生。',
+    },
+    {
+      name: 'keywords',
+      content: '英國GB曼涂石灰基, 石灰塗料, 環保塗料, 英國進口塗料, 裝飾塗料, GA塗料',
+    },
+    {
+      property: 'og:title',
+      content: '英國GB曼涂石灰基 - 環保石灰塗料 | GA塗料',
+    },
+    {
+      property: 'og:description',
+      content:
+        '英國GB曼涂石灰基是英國本土DIY市場最暢銷單品，歐標環保，24個月沈澱精華石灰膏，不含防腐劑，零化合物排放。採用英國鵝卵石製作，製作過程環保可再生。',
+    },
+    {
+      property: 'og:image',
+      content: '/ga/imgs/limebased/LINE_ALBUM__250318_1.jpg',
+    },
+  ],
+});
 </script>
 
 <style scoped>

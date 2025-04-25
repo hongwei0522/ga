@@ -22,6 +22,34 @@ const products = ref(
     img: `/ga/imgs/ImitationFairFacedConcrete/LINE_ALBUM__250318_${i + 1}.jpg`,
   }))
 );
+
+useHead({
+  title: '仿清水模 - 極簡純粹的裝飾材料 | GA塗料',
+  meta: [
+    {
+      name: 'description',
+      content:
+        '仿清水模是一種模仿清水混凝土質感的裝飾材料，保留了混凝土原始的自然紋理與色澤，展現極簡、純粹且富有質感的設計風格。',
+    },
+    {
+      name: 'keywords',
+      content: '仿清水模, 清水混凝土, 裝飾材料, 極簡設計, 建築裝飾, GA塗料',
+    },
+    {
+      property: 'og:title',
+      content: '仿清水模 - 極簡純粹的裝飾材料 | GA塗料',
+    },
+    {
+      property: 'og:description',
+      content:
+        '仿清水模是一種模仿清水混凝土質感的裝飾材料，保留了混凝土原始的自然紋理與色澤，展現極簡、純粹且富有質感的設計風格。',
+    },
+    {
+      property: 'og:image',
+      content: '/ga/imgs/ImitationFairFacedConcrete/LINE_ALBUM__250318_1.jpg',
+    },
+  ],
+});
 </script>
 
 <style scoped>

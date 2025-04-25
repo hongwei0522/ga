@@ -23,6 +23,34 @@ const products = ref(
     img: `/ga/imgs/sheffield/LINE_ALBUM__250318_${i + 1}.jpg`,
   }))
 );
+
+useHead({
+  title: '英國曼涂雪菲爾 - 金屬光澤藝術塗料 | GA塗料',
+  meta: [
+    {
+      name: 'description',
+      content:
+        '英國曼涂雪菲爾(原芙雪菲爾)原型來自英國的謝菲爾德，這款材料最大的亮點在於隱於表面的金屬光澤，在濃厚的「金屬光環」籠罩下，賦予了牆面更多的金屬光澤。',
+    },
+    {
+      name: 'keywords',
+      content: '英國曼涂雪菲爾, 金屬光澤塗料, 藝術塗料, 英國進口塗料, 裝飾塗料, GA塗料',
+    },
+    {
+      property: 'og:title',
+      content: '英國曼涂雪菲爾 - 金屬光澤藝術塗料 | GA塗料',
+    },
+    {
+      property: 'og:description',
+      content:
+        '英國曼涂雪菲爾(原芙雪菲爾)原型來自英國的謝菲爾德，這款材料最大的亮點在於隱於表面的金屬光澤，在濃厚的「金屬光環」籠罩下，賦予了牆面更多的金屬光澤。',
+    },
+    {
+      property: 'og:image',
+      content: '/ga/imgs/sheffield/LINE_ALBUM__250318_1.jpg',
+    },
+  ],
+});
 </script>
 
 <style scoped>

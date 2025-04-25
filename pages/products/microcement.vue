@@ -65,6 +65,34 @@ const products = ref(
     img: `/ga/imgs/microcement/LINE_ALBUM__250318_${i + 1}.jpg`,
   }))
 );
+
+useHead({
+  title: '微水泥 - 現代建築裝飾材料 | GA塗料',
+  meta: [
+    {
+      name: 'description',
+      content:
+        '微水泥是由硅酸鹽水泥、添加劑和礦物顏料組成的裝飾性塗料。它以水泥基為主要粘結物的無機原生態產品，符合現代建築的簡約、樸素的設計美感。',
+    },
+    {
+      name: 'keywords',
+      content: '微水泥, 裝飾性塗料, 水泥基塗料, 現代建築材料, 無機塗料, GA塗料',
+    },
+    {
+      property: 'og:title',
+      content: '微水泥 - 現代建築裝飾材料 | GA塗料',
+    },
+    {
+      property: 'og:description',
+      content:
+        '微水泥是由硅酸鹽水泥、添加劑和礦物顏料組成的裝飾性塗料。它以水泥基為主要粘結物的無機原生態產品，符合現代建築的簡約、樸素的設計美感。',
+    },
+    {
+      property: 'og:image',
+      content: '/ga/imgs/microcement/LINE_ALBUM__250318_1.jpg',
+    },
+  ],
+});
 </script>
 
 <style scoped>
